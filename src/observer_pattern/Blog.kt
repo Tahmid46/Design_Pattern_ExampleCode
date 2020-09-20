@@ -4,7 +4,7 @@ class Blog : Subject {
 
     private var state: String = "There are currently 10 new blog posts"
 
-    val subscribers: MutableList<Observer> = mutableListOf()
+    private val subscribers: MutableList<Observer> = mutableListOf()
 
     override fun registerObserver(observer: Observer) {
         subscribers.add(observer)
